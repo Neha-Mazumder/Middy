@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'profile.dart';
 import 'emoji.dart';
 import 'settings_screen.dart';
+import 'todo_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -74,7 +75,9 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                  MaterialPageRoute(
+                    builder: (context) => const SettingsScreen(),
+                  ),
                 );
               },
             ),
@@ -182,7 +185,12 @@ class _HomeContent extends StatelessWidget {
           _FeatureCard(
             icon: Icons.check_box,
             title: 'Todo List',
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const TodoApp()),
+              );
+            },
             color: Colors.purple.shade100,
           ),
           _FeatureCard(
