@@ -188,7 +188,9 @@ class _HomeContent extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const TodoApp()),
+                MaterialPageRoute(
+                  builder: (context) => const OnboardingScreen(),
+                ),
               );
             },
             color: Colors.purple.shade100,

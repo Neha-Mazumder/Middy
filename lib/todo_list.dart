@@ -12,7 +12,10 @@ class TodoApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'To-Do List App',
-      theme: ThemeData(fontFamily: 'Sans-serif', useMaterial3: true),
+      theme: ThemeData(
+        fontFamily: 'Sans-serif',
+        useMaterial3: true, // Modern UI er jonno
+      ),
       home: const OnboardingScreen(),
     );
   }
@@ -41,11 +44,7 @@ class OnboardingScreen extends StatelessWidget {
                   color: Colors.blue[50],
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: const Icon(
-                  Icons.task_alt,
-                  size: 100,
-                  color: Colors.blueAccent,
-                ),
+                child: const Icon(Icons.task_alt_rounded, size: 100, color: Colors.blueAccent),
               ),
               const SizedBox(height: 40),
               const Text(
@@ -61,29 +60,19 @@ class OnboardingScreen extends StatelessWidget {
               const Spacer(),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const TaskDashboard(),
-                    ),
-                  );
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const TaskDashboard()));
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueAccent,
                   minimumSize: const Size(double.infinity, 55),
-                  // SHAPE ERROR FIX EKHANE:
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
+                  // RoundedRectangleBorder correctly applied
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                   elevation: 0,
                 ),
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      "Get Started",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
+                    Text("Get Started", style: TextStyle(color: Colors.white, fontSize: 18)),
                     SizedBox(width: 10),
                     Icon(Icons.arrow_forward, color: Colors.white),
                   ],
@@ -111,186 +100,25 @@ class TaskDashboard extends StatelessWidget {
         elevation: 0,
         scrolledUnderElevation: 0,
         automaticallyImplyLeading: false,
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.edit_outlined, color: Colors.black),
-          ),
-        ],
+        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.edit_outlined, color: Colors.black))],
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              "Tasks",
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-            ),
-            const Text(
-              "Create your categorised task boards.",
-              style: TextStyle(color: Colors.grey),
-            ),
+            const Text("Tasks", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold)),
+            const Text("Create your categorised task boards.", style: TextStyle(color: Colors.grey)),
             const SizedBox(height: 25),
-
-            _buildCategoryCard(
-              "Inspiration",
-              Colors.red[50]!,
-              Colors.red[200]!,
-            ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const TravelPlanScreen()),
-                );
-              },
-              child: _buildCategoryCard(
-                "Travel Plans",
-                Colors.blue[50]!,
-                Colors.blue[200]!,
-              ),
-            ),
-            // --- 4. TRAVEL PLAN PAGE --- 
-            class TravelPlanScreen extends StatefulWidget {
-              const TravelPlanScreen({super.key});
-
-              @override
-              State<TravelPlanScreen> createState() => _TravelPlanScreenState();
-            }
-
-            class _TravelPlanScreenState extends State<TravelPlanScreen> {
-              final TextEditingController _controller = TextEditingController();
-              final List<_TravelPlace> _places = [
-                _TravelPlace("Museum"),
-                _TravelPlace("Park"),
-                _TravelPlace("Cafe"),
-                _TravelPlace("Library"),
-              ];
-
-              @override
-              void dispose() {
-                _controller.dispose();
-                super.dispose();
-              }
-
-              @override
-              Widget build(BuildContext context) {
-                return Scaffold(
-                  appBar: AppBar(
-                    title: const Text("Travel Plans"),
-                    backgroundColor: Colors.blue[50],
-                    foregroundColor: Colors.blueAccent,
-                    elevation: 0,
-                    leading: IconButton(
-                      icon: const Icon(Icons.arrow_back_ios, color: Colors.blueAccent),
-                      onPressed: () => Navigator.pop(context),
-                    ),
-                  ),
-                  body: Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text("Where will you go today?", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-                        const SizedBox(height: 10),
-                        Row(
-                          children: [
-                            Expanded(
-                              child: TextField(
-                                controller: _controller,
-                                decoration: InputDecoration(
-                                  hintText: "Add a place...",
-                                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-                                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
-                                ),
-                              ),
-                            ),
-                            const SizedBox(width: 10),
-                            ElevatedButton(
-                              onPressed: () {
-                                final text = _controller.text.trim();
-                                if (text.isNotEmpty) {
-                                  setState(() {
-                                    _places.add(_TravelPlace(text));
-                                    _controller.clear();
-                                  });
-                                }
-                              },
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.blueAccent,
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                              ),
-                              child: const Icon(Icons.add, color: Colors.white),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 20),
-                        Expanded(
-                          child: ListView.separated(
-                            itemCount: _places.length,
-                            separatorBuilder: (_, __) => const SizedBox(height: 8),
-                            itemBuilder: (context, index) {
-                              final place = _places[index];
-                              return ListTile(
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                                tileColor: place.done ? Colors.blue[100] : Colors.blue[50],
-                                leading: Checkbox(
-                                  value: place.done,
-                                  onChanged: (val) {
-                                    setState(() {
-                                      place.done = val ?? false;
-                                    });
-                                  },
-                                  activeColor: Colors.blueAccent,
-                                ),
-                                title: Text(
-                                  place.name,
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    decoration: place.done ? TextDecoration.lineThrough : null,
-                                    color: place.done ? Colors.blueAccent.withOpacity(0.5) : Colors.blueAccent,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                                trailing: place.done
-                                    ? Container(
-                                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blueAccent,
-                                          borderRadius: BorderRadius.circular(10),
-                                        ),
-                                        child: const Text("Done", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                                      )
-                                    : null,
-                              );
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                );
-              }
-            }
-
-            class _TravelPlace {
-              final String name;
-              bool done;
-              _TravelPlace(this.name, {this.done = false});
-            }
+            
+            _buildCategoryCard("Inspiration", Colors.red[50]!, Colors.red[200]!),
+            _buildCategoryCard("Travel Plans", Colors.blue[50]!, Colors.blue[200]!),
             _buildCategoryCard("Work", Colors.yellow[50]!, Colors.yellow[200]!),
-
+            
             // Interactive Groceries Card
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const GroceryDetailScreen(),
-                  ),
-                );
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const GroceryDetailScreen()));
               },
               child: Container(
                 padding: const EdgeInsets.all(20),
@@ -301,18 +129,8 @@ class TaskDashboard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      "Groceries",
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.green,
-                      ),
-                    ),
-                    const Text(
-                      "3 of 9 Tasks",
-                      style: TextStyle(color: Colors.green),
-                    ),
+                    const Text("Groceries", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.green)),
+                    const Text("3 of 9 Tasks", style: TextStyle(color: Colors.green)),
                     const SizedBox(height: 10),
                     _todoMiniRow("Avocados", false),
                     _todoMiniRow("Onions", false),
@@ -330,15 +148,9 @@ class TaskDashboard extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            IconButton(
-              icon: const Icon(Icons.home_filled, color: Colors.blueAccent),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(Icons.calendar_month_outlined),
-              onPressed: () {},
-            ),
-            const SizedBox(width: 40),
+            IconButton(icon: const Icon(Icons.home_filled, color: Colors.blueAccent), onPressed: () {}),
+            IconButton(icon: const Icon(Icons.calendar_month_outlined), onPressed: () {}),
+            const SizedBox(width: 40), 
             IconButton(icon: const Icon(Icons.search), onPressed: () {}),
             IconButton(icon: const Icon(Icons.more_horiz), onPressed: () {}),
           ],
@@ -359,14 +171,8 @@ class TaskDashboard extends StatelessWidget {
       width: double.infinity,
       margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-      decoration: BoxDecoration(
-        color: bg,
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: Text(
-        title,
-        style: TextStyle(color: textCol, fontWeight: FontWeight.bold),
-      ),
+      decoration: BoxDecoration(color: bg, borderRadius: BorderRadius.circular(15)),
+      child: Text(title, style: TextStyle(color: textCol, fontWeight: FontWeight.bold)),
     );
   }
 
@@ -375,20 +181,12 @@ class TaskDashboard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         children: [
-          Icon(
-            Icons.check_box_outline_blank,
-            size: 18,
-            color: Colors.green.withOpacity(0.6),
-          ),
+          Icon(Icons.check_box_outline_blank, size: 18, color: Colors.green.withOpacity(0.6)),
           const SizedBox(width: 10),
-          Text(
-            text,
-            style: TextStyle(
-              color: Colors.green[800],
-              decoration: isDone ? TextDecoration.lineThrough : null,
-              decorationColor: Colors.green[800],
-            ),
-          ),
+          Text(text, style: TextStyle(
+            color: Colors.green[800], 
+            decoration: isDone ? TextDecoration.lineThrough : null,
+          )),
         ],
       ),
     );
@@ -402,18 +200,11 @@ class GroceryDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> items = [
-      "Avocados",
-      "Onions",
-      "Tomatoes",
-      "Green Leaves",
-      "Bread",
-      "Vegetable Oil",
-      "Mushrooms",
-      "Brown Sugar",
-      "BBQ Sauce",
-      "Cheese",
+      "Avocados", "Onions", "Tomatoes", "Green Leaves", 
+      "Bread", "Vegetable Oil", "Mushrooms", "Brown Sugar", 
+      "BBQ Sauce", "Cheese"
     ];
-
+    
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -421,60 +212,39 @@ class GroceryDetailScreen extends StatelessWidget {
         elevation: 0,
         scrolledUnderElevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios, color: Colors.grey, size: 20),
-          onPressed: () => Navigator.pop(context),
+          icon: const Icon(Icons.arrow_back_ios, color: Colors.grey, size: 20), 
+          onPressed: () => Navigator.pop(context)
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.save_outlined, color: Colors.grey),
-            onPressed: () {},
-          ),
-        ],
+        actions: [IconButton(icon: const Icon(Icons.save_outlined, color: Colors.grey), onPressed: () {})],
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              "Groceries",
-              style: TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.green,
-              ),
-            ),
+            const Text("Groceries", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.green)),
             const Text("3 of 10 Tasks", style: TextStyle(color: Colors.grey)),
             const SizedBox(height: 20),
             Expanded(
               child: ListView.builder(
                 itemCount: items.length,
                 itemBuilder: (context, index) {
-                  // Some items marked as completed based on your image
-                  bool isStriked =
-                      items[index] == "Tomatoes" ||
-                      items[index] == "Green Leaves" ||
-                      items[index] == "Mushrooms";
-
+                  bool isStriked = items[index] == "Tomatoes" || 
+                                   items[index] == "Green Leaves" || 
+                                   items[index] == "Mushrooms";
+                  
                   return Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8.0),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.check_box_outline_blank,
-                          color: Colors.green[300],
-                        ),
+                        Icon(Icons.check_box_outline_blank, color: Colors.green[300]),
                         const SizedBox(width: 15),
                         Text(
                           items[index],
                           style: TextStyle(
                             fontSize: 16,
-                            decoration: isStriked
-                                ? TextDecoration.lineThrough
-                                : null,
-                            color: isStriked
-                                ? Colors.green.withOpacity(0.5)
-                                : Colors.black87,
+                            decoration: isStriked ? TextDecoration.lineThrough : null,
+                            color: isStriked ? Colors.green.withOpacity(0.5) : Colors.black87,
                           ),
                         ),
                       ],
@@ -493,14 +263,8 @@ class GroceryDetailScreen extends StatelessWidget {
         selectedItemColor: Colors.grey,
         unselectedItemColor: Colors.grey,
         items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.grid_view_rounded),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.camera_alt_outlined),
-            label: "",
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.grid_view_rounded), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.camera_alt_outlined), label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.edit_outlined), label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.more_horiz), label: ""),
         ],
