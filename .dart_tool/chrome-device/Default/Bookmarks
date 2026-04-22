@@ -1,0 +1,238 @@
+{
+   "checksum": "0dda5a2f76c64a15c5ab2438af6a5a80",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13421236982423422",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13341494804911975",
+            "date_last_used": "0",
+            "guid": "6525b40d-d7c4-4a43-b6cc-42cfe5389d70",
+            "id": "13",
+            "name": "BAPS OJ",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://bapsoj.org/",
+            "visit_count": 0
+         }, {
+            "date_added": "13341506606845907",
+            "date_last_used": "0",
+            "guid": "c650be38-d9b4-4563-a09f-cf49b932c0bb",
+            "id": "14",
+            "name": "New Tab",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "chrome://newtab/",
+            "visit_count": 0
+         }, {
+            "date_added": "13342366479691387",
+            "date_last_used": "0",
+            "guid": "0d6b57f4-1ef4-4edc-8352-54c0e4b52207",
+            "id": "15",
+            "name": "Dissertation/Theses - Department of Civil Engineering",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "http://lib.buet.ac.bd:8080/xmlui/handle/123456789/48?fbclid=IwAR2_rJp0AHRWeH9CPkOIyWTT1xJ7n6y0eysxjtcKR-eMdgCOGYkdZRniYrU",
+            "visit_count": 0
+         }, {
+            "date_added": "13342368199403430",
+            "date_last_used": "0",
+            "guid": "b1e56fbb-506c-4f95-989c-8a42ef099918",
+            "id": "16",
+            "name": "mashfik bhaiya",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "http://lib.buet.ac.bd:8080/xmlui/handle/123456789/913",
+            "visit_count": 0
+         }, {
+            "date_added": "13354448308506386",
+            "date_last_used": "0",
+            "guid": "9e7739bc-55ce-441c-ba66-25f2291bdc48",
+            "id": "17",
+            "name": "Gemini",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://gemini.google.com/app",
+            "visit_count": 0
+         }, {
+            "date_added": "13354452214667635",
+            "date_last_used": "0",
+            "guid": "2d49c3e5-6bbf-48f2-8aa1-17e38485d68d",
+            "id": "18",
+            "name": "Google Codelabs",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://codelabs.developers.google.com/?category=aiandmachinelearning",
+            "visit_count": 0
+         }, {
+            "date_added": "13354452963497045",
+            "date_last_used": "0",
+            "guid": "0c323524-3aed-4654-be18-f0a8adddca95",
+            "id": "19",
+            "name": "Gemini",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://gemini.google.com/app/bf97f8b5f4c01370",
+            "visit_count": 0
+         }, {
+            "date_added": "13354452966693852",
+            "date_last_used": "0",
+            "guid": "c7112934-788c-4eda-a6ce-25c60554d4e3",
+            "id": "20",
+            "name": "Kaggle: Your Machine Learning and Data Science Community",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://www.kaggle.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13354452971672527",
+            "date_last_used": "0",
+            "guid": "3aa511c4-65f4-4670-8a5b-812db103c41f",
+            "id": "21",
+            "name": "Untitled prompt | Google AI Studio",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://aistudio.google.com/app/prompts/new_chat?utm_source=agd&utm_medium=referral&utm_campaign=core-cta&utm_content=",
+            "visit_count": 0
+         }, {
+            "date_added": "13356647859089858",
+            "date_last_used": "0",
+            "guid": "60fe4e59-6441-414a-9f4e-787a48a3889d",
+            "id": "22",
+            "name": "Plagiarism Checker - 100% Free Plagiarism Detector Online",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://smallseotools.com/plagiarism-checker/",
+            "visit_count": 0
+         }, {
+            "date_added": "13356647873561194",
+            "date_last_used": "0",
+            "guid": "aaf2f620-8a72-43a6-b04a-a55bda4cb5f7",
+            "id": "23",
+            "name": "WordCounter - Count Words & Correct Writing",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://wordcounter.net/",
+            "visit_count": 0
+         } ],
+         "date_added": "13421236982423422",
+         "date_last_used": "0",
+         "date_modified": "13356647873561194",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13150724505794389",
+            "date_last_used": "0",
+            "guid": "440830db-8ede-4657-a708-f3157f2774cc",
+            "id": "7",
+            "name": "Earn Station | Your earning master",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://www.earnstations.com/user/welcome",
+            "visit_count": 0
+         }, {
+            "date_added": "13305461684641689",
+            "date_last_used": "0",
+            "guid": "ddaff7f6-5e45-416e-8221-1d65d0e0887b",
+            "id": "8",
+            "name": "Writer@PocketNovel",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://writer.pocketnovel.com/shows/novels/add-chapter/012b30d4efd9871040812f7ced9ae81a9c58e273?proceed_to_details=1&novel_creation_flow=1",
+            "visit_count": 0
+         }, {
+            "date_added": "13335461713436659",
+            "date_last_used": "0",
+            "guid": "d8315e9a-c2a2-44df-8fd7-278bc9ef0c6a",
+            "id": "9",
+            "name": "cyber",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://stopncii.org/?fbclid=IwAR2bbWZUWKAN1xyV6QOY493ZFSBFaakfq1hRM1gJSFx09WNrcW0BY7X7U6M",
+            "visit_count": 0
+         }, {
+            "date_added": "13337115471048569",
+            "date_last_used": "0",
+            "guid": "be1ace5f-73ec-4fd8-85ea-b5f21abaee9e",
+            "id": "10",
+            "name": "website ",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://nehamazumder.wordpress.com/wp-admin/site-editor.php?path=%2Fpage&canvas=edit",
+            "visit_count": 0
+         }, {
+            "date_added": "13338230881436438",
+            "date_last_used": "0",
+            "guid": "ec7ba3c1-9333-42ed-9b56-48edb1e2e14e",
+            "id": "11",
+            "name": "W3Schools Online Web Tutorials",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://www.w3schools.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13357674468538987",
+            "date_last_used": "0",
+            "guid": "4f701770-9c33-4f11-9656-191a9e01c07c",
+            "id": "12",
+            "name": "Handbags for Women - Buy Leather Handbags, Designer Handbags for women Online | Myntra",
+            "show_icon": false,
+            "source": "unknown",
+            "type": "url",
+            "url": "https://www.myntra.com/handbags?f=Brand%3AForever+Glam+by+Pantaloons%3A%3AGender%3Awomen&luxuryType=nonluxury&p=2",
+            "visit_count": 0
+         } ],
+         "date_added": "13421236982423422",
+         "date_last_used": "0",
+         "date_modified": "13357674468538987",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13421310026706191",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "24",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCO/tyLOdAQAAKg4QABgBIAAoBjAAOABAABIAKhh0MVo0VENCQVZmUk1paGlhamxiNzlnPT1IA6AGDBKtAQgKEqgBChxwSVp0TnFDL1hLdjlZSXd5R3VQd3FqN09XdTQ9EiRiZTFhY2U1Zi03M2VjLTRmZDgtODVlYS1iNWYyMWFiYWVlOWUYACAAKAAw4YPr8K4yOLuM6/CuMkC7jOvwrjJKHEtTejVhRGdwQ203bzNKdThnVkpLM05YZzBaOD1aHyId3mNYUCsySUhZNDl4NjUyNjdXQ1o3MFE3alNjcz1leBCm0sI+AmAAEq0BCAkSqAEKHFV2SUUrS0tuRnU5RFg5Mmh2aGJsMkRMOCtIcz0SJGQ4MzE1ZTlhLWMyYTItNDRkZi04ZmQ3LTI3OGJjOWVmMGM2YRgAIAAoADDfg+vwrjI454vr8K4yQOeL6/CuMkocNEVydktvUGZIR0tIZHh6cVYwZzlVMTl6TnpvPVofIh29NmtHTXhhdTN0YzFqNGw5UU9HQW1GRWdveTRzPWUzTXlRwj4CYAASrAEIBxKnAQocQVZGVHVFdmJQUXBjVXlIZ09DRTJCWHFQQms4PRIkNDQwODMwZGItOGVkZS00NjU3LWE3MDgtZjMxNTdmMjc3NGNjGAAgACgAMNyD6/CuMjiIi+vwrjJAiIvr8K4yShxtNmZnMitwTEg0OHdFZlZtV0c4Z0dOeXplZlk9Wh4iHEhLaVYyNFR0RjUzL2R6enh1MjlrUnJBS2ZUUT1lCexxxMI+AmAAEo4BCAMSiQEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SJDg4ZGY5NWI2LTI2NjYtNWQ0Mi05MDdiLTEzMTNhOWQ0NWQzNhgAIAAoADDTj4WhnjE4npOFoZ4xQJ6ThaGeMUoceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPVoAZQAAAADCPgJgABKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiRiZWJiNjM5MC0wN2QyLTU4NjktYTU2Mi1mYzhiZjBhYTAwYzkYACAAKAAwzY+FoZ4xOK2ShaGeMUCtkoWhnjFKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASrQEIFxKoAQocbi9jZlZrUk9NQ2ZzZzRERk9nTUZEcHoveHc0PRIkYWFmMmY2MjAtOGE3Mi00M2E2LWIwNGEtYTU1YmRhNGNiNWY3GAAgACgAMNiD6/CuMjiaievwrjJAmonr8K4yShx5bFh2d044bzRkWm1FdW5KWnVmZWxEMHdtSDQ9Wh8iHf9iMkVtaU5CNG93NlhLUzgyaVFKaG1pL2lHZlE9Zef1xP/CPgJgABKtAQgUEqgBChxwNWREL0xlZnFCbmhUbzQxK3dYYjliVUNrNlk9EiRjNzExMjkzNC03ODhjLTRlZGEtYTZjZS0yNWM2MDU1NGQ0ZTMYACAAKAAw4IPr8K4yOIiM6/CuMkCIjOvwrjJKHFU4WkVBYjVYYW5qUERZZy9pdU9DaDkzQ3c2RT1aHyId/kRRU2c4SVR3OTVmZk90bW52N29JdlhkMllLbz1l1WELAMI+AmAAEq0BCBISqAEKHEc1UCtXSEZSUDZaZ3BHYXB5azRuQXRjQStQQT0SJDJkNDljM2U1LTZiYmYtNDhmMi04YWExLTE3ZTM4NDg1ZDY4ZBgAIAAoADDSg+vwrjI4rYfr8K4yQK2H6/CuMkocbXNlVnZuc1R1dzZqeUdoRWJRUVYrMERrL01JPVofIh36TkV6aTRUeUdqc3E1UWd0aDJuaXFoaFErQU9JPWU4cCwCwj4CYAASrQEIFhKoAQocQS81OEtWWWJmS3YwemdHZHhvL2p1aVlTb1hBPRIkNjBmZTRlNTktNjQ0MS00MTRhLTlmNGUtNzg3YTQ4YTM4ODlkGAAgACgAMNOD6/CuMjjVh+vwrjJA1Yfr8K4yShxtYU1yeTlwTExIdDJQa2txZnZIT0w5NmhEOVE9Wh8iHf9UWm5ZOXczSFF5OC9RdFd4cXZNZ0RveC9UbjA9Zbfw783CPgJgABKtAQgQEqgBChxBbVlUbllIT0dDTUxENkkwTGJ4NnNIV3J3Skk9EiRiMWU1NmZiYi01MDZjLTRmOTUtOTg5Yy04YTQyZWYwOTk5MTgYACAAKAAw2oPr8K4yONqJ6/CuMkDaievwrjJKHEoveHdQTG1hQlB5Rk40R0VZdldpblhFMXhwWT1aHyId6itqbVl0cVdLSkNxSUxYWVBDOVU5cWFkYmNpST1lQKvpzcI+AmAAEq0BCAsSqAEKHDgxN21NNHgrNldrR2JoYkFHMEFJOHRlaHBoUT0SJGVjN2JhM2MxLTkzMzMtNDJlZC05YjU2LTQ4ZWRiMWUyZTE0ZRgAIAAoADDbg+vwrjI4+onr8K4yQPqJ6/CuMkocWjRRc0M2a3JXNTE0alBoRmFXa3djdGsxbnpNPVofIh3vcW14ZGVvUjN1ckJwOGNuTjNJQXpzWENiK21zPWW6s6awwj4CYAASrQEIDxKoAQocbjljWCt1WkthZE1FN3dkUENVSi8yMEZleFEwPRIkMGQ2YjU3ZjQtMWVmNC00ZWRjLTgzNTItNTRjMGU0YjUyMjA3GAAgACgAMN2D6/CuMjini+vwrjJAp4vr8K4yShx6eklSdm0rdzJRd0NZWmRPWHMzMWNXbnNhck09Wh8iHdRlc1ZlU09pR2xtbWkybGdMRW90T2pSN0RUZDQ9ZUCr6c3CPgJgABKsAQgNEqcBChxnOEluNytZTk5mVUpCeXQ4SitibDNqTkQ0SVk9EiQ2NTI1YjQwZC1kN2M0LTRhNDMtYjZjYy00MmNmZTUzODlkNzAYACAAKAAw2YPr8K4yOLqJ6/CuMkC6ievwrjJKHHB5Z0VJei83TzRyMDZ6Zm1QeEU0M2JmSjNLOD1aHiIcUWd6Y0dBNjl4K29pTFk1YlcvbGhJb3VrWi9ZPWVvMBCKwj4CYAASrQEIDhKoAQocTy91VHgrMHZXeFhqUlNOeFpKQ2IxUWM5MUJNPRIkYzY1MGJlMzgtZDliNC00NTYzLWEwOWYtY2Y0OWI5MzJjMGJiGAAgACgAMNWD6/CuMjibiOvwrjJAm4jr8K4yShx5aUtycWVtVnpUQ3g1YTU0TXJJVndOVy9hbms9Wh8iHahMaEVzR2YyTFJ3Q0czQXFTNHhUd3BhL0dta2c9ZQAAAADCPgJgABKsAQgIEqcBChwrMFEvdk1YZUoyam5YVFU2dDl6Q0pSSHcybmc9EiRkZGFmZjdmNi01ZTQ1LTQxNmUtODIyMS0xZDY1ZDBlMDg4N2IYACAAKAAw1IPr8K4yOPmH6/CuMkD5h+vwrjJKHDBwL001UE9lN0R3cktPOWs2T1p1anVIWUQ4az1aHiIcekdST0tzZ3ZoUGtya0xMMExmUDFpcFlZbFlFPWW1KNA5wj4CYAASjgEIAhKJAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkMzJlZWU3OGYtN2U3Ny01NThhLWFhMTItNzlmNTkxODllMWZiGAAgACgAMM6PhaGeMTjFkoWhnjFAxZKFoZ4xShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAAMI+AmAAEq0BCBUSqAEKHC9vNFdjR1h1TTc2b1BPa0FmUzlOZXlXMTFOUT0SJDNhYTUxMWM0LTY1ZjQtNDY3MC04YTViLTgxMmRiMTAzYzQxZhgAIAAoADDXg+vwrjI4+ojr8K4yQPqI6/CuMkocZ1RPSFFTUVlWNXZSUlFXZTYrYXIrRlJYVkswPVofIh3/RlFzbWNCRjYwS2xWYm1rSG9sQVI2NnhEc0pNPWUHqbF6wj4CYAASrQEIExKoAQocVVpoMmlXZlF5Z2NhWWpHMlowUzE0WCs2Zy80PRIkMGMzMjM1MjQtM2FlZC00NjU0LWJlMTgtZjBhOGFkZGRjYTk1GAAgACgAMNaD6/CuMjjYiOvwrjJA2Ijr8K4yShxIK2EyejByTWVsRUFzN0lCbi9QeXZXQzMvSDg9Wh8iHf1WbjBLRmdtQ1VmMGF1Q3ZMcHQ4Y09JcDQ5aUE9ZcEcNWTCPgJgABKtAQgREqgBChxhTEJFelg0Y3JzUEtkN0huMkQ5ZGFYL2lPbzg9EiQ5ZTc3MzliYy01NWNlLTQ0MWMtYmE2Ni0yNWYyMjkxYmRjNDgYACAAKAAw4oPr8K4yOOKM6/CuMkDijOvwrjJKHGZUN0g2VGlVTmlIRFVvb01kL0tNS3ZVMXVKbz1aHyId9TNIbkJwQVdkZ0hwcytPb2p1T04xc0NUZk9xaz1lwRw1ZMI+AmAAEq0BCAwSqAEKHFZzL3FKcDVwbE0rVmVISWkzamFtVDlaTzBKST0SJDRmNzAxNzcwLTljMzMtNGYxMS05NjU2LTE5MWE5ZTAxYzA3YxgAIAAoADDeg+vwrjI4xovr8K4yQMaL6/CuMkocdHNCY2hLY3lSbXYyWXVCUW5KY2lmRWtrUTdNPVofIh33TytNTmdIaHZGREtFeTJXa1lKd1ZKVVpJZERjPWVZmfIlwj4CYAASjgEIGBKJAQocd1JCclpMKzZQQTlhdktnak5QN0pYRExjZnZzPRIkODU3YmQ1M2MtZDRkZS01ZGU4LWE2OWUtMjFmY2ZkOTY2MDQwGAAgACgAMM6EupebMziYhrqXmzNAmIa6l5szShxubXg2NXNRRHZ4SThUZ0VlditBK250dG9TbjQ9WgBlAAAAAMI+AmAAMAA4AA==",
+   "version": 1
+}
