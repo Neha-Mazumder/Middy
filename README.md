@@ -1,6 +1,6 @@
 # middy1
 
-A new Flutter project.
+A new Flutter project. Neha Mazumder came up with this idea while struggling with her ADHD and Panic attacks. It's an app to organize your life improve life style and help people who struggle and suffer with mental health disorders
 
 ## Getting Started
 
